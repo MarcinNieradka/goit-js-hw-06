@@ -1,1 +1,1 @@
-# goit-js-hw-06
+https://marcinnieradka.github.io/goit-js-hw-06/
