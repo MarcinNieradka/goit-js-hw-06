@@ -6,12 +6,16 @@ let counterValue = 0;
 // ============ EVENT LISTENERS START
 
 incrementBtn.addEventListener("click", () => {
-  counterValue++;
-  valueSpan.textContent = counterValue;
+  valueSpan.textContent = ++counterValue;
+  // OR
+  // counterValue++;
+  // valueSpan.textContent = counterValue;
 });
 
 decrementBtn.addEventListener("click", () => {
-  counterValue--;
-  valueSpan.textContent = counterValue;
+  valueSpan.textContent = --counterValue;
+  // OR
+  // counterValue--;
+  // valueSpan.textContent = counterValue;
 });
 // ============ EVENT LISTENERS END

@@ -1,10 +1,24 @@
 const mainInput = document.getElementById("validation-input");
-// console.log(mainInput.dataset.length);
+const inputLength = Number(mainInput.dataset.length);
 
 mainInput.addEventListener("blur", (e) => {
   // console.log(typeof e.currentTarget.value.length);
   // console.log(typeof e.currentTarget.dataset.length);
-  mainInput.value.length === +mainInput.dataset.length
+
+  // ------ 3rd version
+  mainInput.value.length === inputLength
     ? (mainInput.className = "valid")
     : (mainInput.className = "invalid");
+
+  // OR
+  // ------ 2nd version
+  // mainInput.value.length === Number(mainInput.dataset.length)
+  //   ? (mainInput.className = "valid")
+  //   : (mainInput.className = "invalid");
+
+  // OR
+  // ------ 1st version
+  // mainInput.value.length === +mainInput.dataset.length
+  //   ? (mainInput.className = "valid")
+  //   : (mainInput.className = "invalid");
 });
